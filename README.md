@@ -3,6 +3,21 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+## Reflection
+
+### 1. Describe the effect each of the P, I, D components had in your implementation.
+
+P component controls the car to turn back to the center of the road when the car deviates from the centerline. But the car will        always overshoots. Therefore, the D component is used to avoid this. It will make the car to approach the target trajectory gracefully. The I component is used to adjust systematic bias. But, when I tuned the value of i with twiddle, it turned out to be 0. So, that means there is not systematic bias in this case.
+ 
+### 2. Describe how the final hyperparameters were chosen.
+
+Final hyperparameters:
+  * p:0.334155
+  * i:0
+  * d:4.80807
+ 
+These hyperparameters were chosen by twiddle which is implemented in the code (main.cpp).
+
 ## Dependencies
 
 * cmake >= 3.5
