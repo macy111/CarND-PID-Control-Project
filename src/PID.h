@@ -1,6 +1,7 @@
 #ifndef PID_H
 #define PID_H
 
+
 class PID {
 public:
   /*
@@ -41,6 +42,7 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+
 };
 
 #endif /* PID_H */
